@@ -50,31 +50,20 @@ class CoinSerializer(serializers.ModelSerializer):
 
 
 
-
-
 class FiatCurrencySerializer(serializers.ModelSerializer):
     class Meta:
         model = FiatCurrency
         fields = '__all__'
 
-# class CoinSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Coin
-#         fields = '__all__'
-
-# class NetworkSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Network
-#         fields = '__all__'
 
 class TransactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transaction
         fields = '__all__'
 
-"""convert na fiat wallut fiat wallut """
+# """convert na fiat wallut fiat wallut """
 
-class CurrencyConversionSerializer(serializers.Serializer):
-    amount = serializers.FloatField()
-    base_currency = serializers.CharField(max_length=250)
-    target_currency = serializers.CharField(max_length=250)
+# class CurrencyConversionSerializer(serializers.Serializer):
+#     amount = serializers.FloatField()
+#     base_currency = serializers.CharField(max_length=250)
+#     target_currency = serializers.CharField(max_length=250)
